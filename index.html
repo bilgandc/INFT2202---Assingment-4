@@ -1,0 +1,170 @@
+<!--
+* INFT2202 - Assignment 2
+* Student ID: 100948423 & 100589655
+* Name: Bilgan Kiris & Mariah Laroco
+* Date: February 23th, 2025
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./content/style.css">
+</head>
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="app" class="container-fluid">
+            <a class="navbar-brand" href="#index">Volunteer Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#index"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opportunities"><i class="fa-solid fa-handshake-angle"></i> Volunteer Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fa-solid fa-info"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#statistics"><i class="fa-solid fa-info"></i> Statistics</a>
+                    </li>
+                    <li class="nav-item" id="loginMenuItem">
+                        <a class="nav-link" href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                    </li>
+                    <li class="nav-item" id="welcomeMenuItem" style="display:none;">
+                        <span class="nav-link" id="welcomeMessage"></span>
+                    </li>
+                    <li class="nav-item" id="logoutMenuItem" style="display:none;">
+                        <a class="nav-link" href="javascript:void(0);" id="logoutBtn"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="dropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+                            <li><a class="dropdown-item" href="#privacy">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="#service">Terms of Service</a></li>
+                            <li><a class="dropdown-item" href="#gallery">Photo Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<main class="container mt-5">
+
+    <h1>Welcome to Volunteer Connect!</h1>
+    <p>Thank you for visiting Volunteer Connect. We are excited to have you join us in making a positive impact in the community. Explore our volunteer opportunities and get involved today!</p>
+
+    <!-- Carousel -->
+    <div id="carouselIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./content/images/i4.jpg" class="d-block w-100" alt="Volunteer Activity 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./content/images/i2.jpg" class="d-block w-100" alt="Volunteer Activity 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./content/images/i3.jpg" class="d-block w-100" alt="Volunteer Activity 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Volunteer Opportunities Section -->
+    <section>
+        <h2 class="section-title">Volunteer Opportunities</h2>
+        <p>
+            Discover ways to give back to your community through volunteering. Choose from a variety of opportunities that suit your skills and interests.
+        </p>
+        <div class="calendar-container text-center mt-4">
+            <i class="fa-solid fa-calendar-days" style="color: #ff0055; font-size: 30px;"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="getInvolved" class="discover-button" href="opportunities.html">Get Involved</button>
+        </div>
+    </section>
+
+    <!-- Featured Volunteer Section -->
+    <section class="mt-5">
+        <h3 class="feature-title">Featured Volunteer</h3>
+        <p class="feature-paragraph">Celebrating the exceptional contributions of our volunteers.</p>
+        <div class="feature-content d-flex align-items-center mt-4">
+            <div class="feature-image me-4">
+                <img src="./content/images/b.jpg" alt="Featured Volunteer">
+            </div>
+            <div>
+                <p><em>
+                    "Volunteers don't just give, they make a difference that lasts a lifetime."</em>
+                </p>
+                <br><p><strong><em>- Bilgan Kiris</em></strong></p>
+            </div>
+        </div>
+        <div class="feature-content d-flex align-items-center mt-4">
+            <div class="feature-image me-4">
+                <img src="./content/images/m.jpg" alt="Featured Volunteer">
+            </div>
+            <div>
+                <p><em>
+                    "Volunteering has changed my life. It's a way to make a real difference in my community."</em>
+                </p>
+                <br><p><strong><em>- Mariah Laroco</em></strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API section: nearby volunteer opportunities-->
+    <section id="volunteerApiSection" class="mt-5">
+        <h3 class="section-title">News</h3>
+        <p>
+            Discover volunteer opportunities near you through our community.
+        </p>
+        <div id="newsContainer" class="mt-4">
+
+        </div>
+    </section>
+</main>
+
+<footer id="footer-placeholder" class="footer mt-auto py-3 bg-body-tertiary">
+
+</footer>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/scripts/main.js"></script>
+<script src="./scripts/route.js"></script>
+</body>
+</html>

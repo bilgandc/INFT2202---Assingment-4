@@ -1,0 +1,426 @@
+/*
+* INFT2202 - Assignment 1
+* Student ID: 100948423 & 100589655
+* Name: Bilgan Kiris & Mariah Laroco
+* Date: January 23th, 2025
+* */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    margin: 10% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+/* General Style */
+html {
+    height: 100%; /* Make both html and body take up 100% of the height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #fffff2;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fffff2;
+}
+
+main {
+    background-color: #fffff2;
+}
+
+header {
+    background-color: #fffff2;
+}
+
+.footer {
+    background-color: #fffff2;
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    height: 500px;
+    background-color: #fffff2;
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Paragraph */
+.section-paragraph {
+    color: #555;
+    margin: 0 10%;
+    font-size: 1.1rem;
+}
+
+/* Calendar icon and button */
+.calendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.calendar-container .fa-calendar {
+    font-size: 3rem;
+    color: #8aa138;
+    margin-right: 10px;
+}
+
+.discover-button {
+    background-color: #d4eb83;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.discover-button:hover {
+    background: #ff0055;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* featured volunteer section
+ */
+.featured-volunteer {
+    margin: 40px 10%;
+    text-align: center;
+}
+
+.featured-volunteer .feature-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.featured-volunteer .feature-paragraph {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* featured volunteer image and quote */
+.feature-content {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.feature-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/*
+* Navigation bar styling
+*/
+.navbar {
+    background-color: #fffff2;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    background-color: #caf2c4;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #d6f065;
+    color: white;
+    border: 2px solid #8aa138;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    background-color: #d4eb83;
+    color: white;
+    border: 2px solid #8aa138;
+    font-weight: bold;
+}
+
+/*
+* Modal Styling
+ */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirmation-message {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+
+
+/**
+Calendar
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    font-size: 14px;
+}
+
+.day {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #e0e0e0;
+}
+
+.event {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.event.fundraisers {
+    border-left: 5px solid green;
+}
+
+.event.workshops {
+    border-left: 5px solid blue;
+}
+
+.event.cleanups {
+    border-left: 5px solid orange;
+}
+
+
+
+/* Calendar Header - Month Name Styling */
+.calendar-header {
+    display: flex;
+    justify-content: center; /* Center the month name horizontally */
+    width: 100%;
+    margin-bottom: 10px; /* Adds space between the month name and buttons */
+}
+
+#monthName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Buttons placed below the calendar header */
+.calendar-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+    margin-bottom: 20px; /* Adds space between buttons and calendar grid */
+}
+
+/* Button styling */
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Calendar styling */
+.calendar {
+    flex: 0 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.day {
+    padding: 10px;  /* Reduced padding */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #45b0f3;
+}
+.day.highlight {
+    background-color: #ffeb3b; /* A yellowish color for event days */
+    color: black;  /* Ensure the text is readable */
+    font-weight: bold;  /* Make it stand out more */
+}
+
+/*
+* Donate link
+*/
+
+.donate-link {
+    background-color: #ffe6f0;
+    border: 1px solid #ffccd5;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #ff0055;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.donate-link:hover {
+    background-color: #ffccd5;
+    color: #fff;
+}
+

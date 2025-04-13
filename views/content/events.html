@@ -1,0 +1,95 @@
+<!--
+* INFT2202 - Assignment 3
+* Student ID: 100948423 & 100589655
+* Name: Bilgan Kiris & Mariah Laroco
+* Date: March 18th, 2025
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Events</title>
+
+    <title>Events</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../../content/style.css">
+
+
+</head>
+<body>
+<header id="header-placeholder">
+
+</header>
+
+<main class="container mt-5">
+    <h1>Upcoming Events</h1>
+
+
+<div class="container">
+    <div class="filter">
+        <label for="eventCategory">Filter by category:</label>
+        <select id="eventCategory">
+            <option value="all">All</option>
+            <option value="fundraisers">Fundraisers</option>
+            <option value="workshops">Workshops</option>
+            <option value="cleanups">Cleanups</option>
+        </select>
+    </div>
+
+    <!-- Calendar Header with Month Name -->
+    <div class="calendar-header">
+        <span id="monthName"></span> <!-- Month Name centered -->
+    </div>
+
+    <!-- Buttons below the Calendar Header -->
+    <div class="calendar-buttons">
+        <button id="prevMonth">Prev</button>
+        <button id="nextMonth">Next</button>
+    </div>
+
+    <!-- Calendar Grid -->
+    <div class="calendar">
+        <div class="month" id="calendarMonth"></div>
+        <div class="days" id="calendarDays"></div>
+    </div>
+
+    <!-- Add Event Form -->
+    <form id="eventForm" class="mt-4">
+        <h2>Add New Event</h2>
+        <div class="mb-3">
+            <label for="eventTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" id="eventTitle" required>
+        </div>
+        <div class="mb-3">
+            <label for="eventDate" class="form-label">Date</label>
+            <input type="date" class="form-control" id="eventDate" required>
+        </div>
+        <div class="mb-3">
+            <label for="eventCategory" class="form-label">Category</label>
+            <input type="text" class="form-control" id="eventCategory" required>
+        </div>
+        <div class="mb-3">
+            <label for="eventDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="eventDescription" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Add Event</button>
+    </form>
+
+
+    <div id="eventDetails"></div>
+</div>
+</main>
+
+
+<footer id="footer-placeholder" class="footer mt-auto py-3 bg-body-tertiary">
+
+</footer>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../scripts/main.js"></script>
+</body>
+</html>

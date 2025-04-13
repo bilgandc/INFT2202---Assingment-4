@@ -1,0 +1,63 @@
+<!--
+* INFT2202 - Assignment 3
+* Student ID: 100948423 & 100589655
+* Name: Bilgan Kiris & Mariah Laroco
+* Date: March 18th, 2025
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opportunities</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="../../content/style.css">
+</head>
+<body>
+<header id="header-placeholder">
+
+</header>
+
+<main class="container mt-5">
+    <div class="container mt-5">
+        <h1>Volunteer Opportunities</h1>
+
+        <div id="opportunityList" class="row">
+
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sign Up for Opportunity</h2>
+            <form id="signupForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="role">Preferred Role:</label>
+                <input type="text" id="role" name="role" required><br>
+
+                <button type="submit">Submit</button>
+                <p id="confirmationMessage" class="confirmation-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../scripts/main.js"></script>
+</main>
+
+<footer id="footer-placeholder" class="footer mt-auto py-3 bg-body-tertiary">
+
+</footer>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../scripts/main.js"></script>
+</body>
+</html>

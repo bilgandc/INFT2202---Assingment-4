@@ -1,0 +1,119 @@
+<!--
+* INFT2202 - Assignment 3
+* Student ID: 100948423 & 100589655
+* Name: Bilgan Kiris & Mariah Laroco
+* Date: March 18th, 2025
+ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="../../content/style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div id="app" class="container-fluid">
+      <a class="navbar-brand" href="#index">Volunteer Connect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#index"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#opportunities"><i class="fa-solid fa-handshake-angle"></i> Volunteer Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events"><i class="fa-solid fa-calendar-days"></i> Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fa-solid fa-info"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#statistics"><i class="fa-solid fa-info"></i> Statistics</a>
+          </li>
+          <li class="nav-item" id="loginMenuItem">
+            <a class="nav-link" href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+          </li>
+          <li class="nav-item" id="welcomeMenuItem" style="display:none;">
+            <span class="nav-link" id="welcomeMessage"></span>
+          </li>
+          <li class="nav-item" id="logoutMenuItem" style="display:none;">
+            <a class="nav-link" href="javascript:void(0);" id="logoutBtn"><i class="fa-solid fa-sign-out"></i> Log Out</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="dropdownButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+              <li><a class="dropdown-item" href="#privacy">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="#service">Terms of Service</a></li>
+              <li><a class="dropdown-item" href="#gallery">Photo Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container mt-5">
+  <h1>Contact Us</h1>
+  <p>We would love to hear from you.</p>
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email address" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="subject" class="form-label">Subject</label>
+      <textarea class="form-control" id="subject" rows="1"></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="feedback" class="form-label">Feedback</label>
+      <textarea class="form-control" id="feedback" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</main>
+
+<footer class="footer mt-auto py-3 bg-body-tertiary">
+  <div class="container text-center">
+    <a href="privacy.html">Privacy Policy</a> | <a href="service.html">Terms of Service</a>
+  </div>
+</footer>
+
+<div class="modal" id="confirmationModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="confirmationBody">
+        <p>Your message has been sent successfully. You will be redirected to the home page.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../scripts/main.js"></script>
+</body>
+</html>

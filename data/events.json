@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2025-01-10",
+    "title": "Fundraiser for Kids",
+    "category": "fundraisers",
+    "description": "Join us for a fundraising event to support local children."
+  },
+  {
+    "date": "2025-01-15",
+    "title": "Community Workshop",
+    "category": "workshops",
+    "description": "Learn how to build a birdhouse in this community workshop."
+  },
+  {
+    "date": "2025-01-20",
+    "title": "Park Cleanup",
+    "category": "cleanups",
+    "description": "Help us clean up the park and make the community a better place!"
+  },
+  {
+    "date": "2025-01-25",
+    "title": "Fundraising Gala",
+    "category": "fundraisers",
+    "description": "A charity gala to raise funds for the local hospital."
+  },
+  {
+    "date": "2025-01-30",
+    "title": "Tech Workshop",
+    "category": "workshops",
+    "description": "Join us for a hands-on tech workshop on web development."
+  },
+  {
+    "date": "2025-02-05",
+    "title": "Beach Cleanup",
+    "category": "cleanups",
+    "description": "Help clean up the beach and protect the environment."
+  },
+  {
+    "date": "2025-02-15",
+    "title": "Blind Date",
+    "category": "workshops",
+    "description": "Assist the blind this Valentine's Day."
+  }
+]
