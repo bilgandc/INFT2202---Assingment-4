@@ -15,7 +15,7 @@ app.use(express.json()); // Middleware to parse JSON
 
 // Middleware for session
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET, // Use the secret from .env
     resave: false,
     saveUninitialized: true
 }));
